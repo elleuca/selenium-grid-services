@@ -16,6 +16,19 @@
 	<groupId>com.googlecode.maven-download-plugin</groupId>
 	<artifactId>maven-download-plugin</artifactId>
 	<version>1.1.0</version>
+	<executions>
+	  <execution>
+	    <id>fetch-selenium-server-standalone</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>wget</goal>
+	    </goals>
+	    <configuration>
+	      <url>https://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar</url>
+	      <outputDirectory>${basedir}/data</outputDirectory>
+	    </configuration>
+	  </execution>
+	</executions>
       </plugin>
     </plugins>
   </build>
