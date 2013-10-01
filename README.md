@@ -1,8 +1,10 @@
-Selenium Server (Hub and Grid) Services Scripts
+Selenium Server (Hub and Node) Services Scripts
 ===============================================
 
-This module holds configuration files to launch Selenium Server
-in Hub or Grid node as a service/daemon.
+Introduction
+------------
+This module helps to build simple to set-up services for Selenium Grid(2).
 
-We'll use Java Service Wrapper as a base. See 
-http://wrapper.tanukisoftware.com
+Basically, it uses maven to fetch relevant files from internet and to
+prepare a compressed archive holding a ready to be used on installed service
+for a specific OS, thanks to [Java Service Wrapper](http://wrapper.tanukisoftware.com)
