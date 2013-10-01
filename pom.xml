@@ -11,6 +11,11 @@
 
   <name>Selenium Grid Services</name>
 
+  <properties>
+    <selenium.version>2.35.0</selenium.version>
+    <selenium.jar>selenium-server-standalone-${selenium.version}.jar</selenium.jar>
+  </properties>
+
   <build>
     <plugins>
       <plugin>
@@ -25,7 +30,7 @@
 	      <goal>wget</goal>
 	    </goals>
 	    <configuration>
-	      <url>https://selenium.googlecode.com/files/selenium-server-standalone-2.35.0.jar</url>
+	      <url>https://selenium.googlecode.com/files/${selenium.jar}</url>
 	      <outputDirectory>${basedir}/data</outputDirectory>
 	    </configuration>
 	  </execution>
