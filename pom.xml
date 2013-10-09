@@ -38,6 +38,20 @@
 	      <outputDirectory>${basedir}/data</outputDirectory>
 	    </configuration>
 	  </execution>
+	  <execution>
+	    <id>wrapperpack</id>
+	    <phase>package</phase>
+	    <goals>
+	      <goal>wget</goal>
+	    </goals>
+	    <configuration>
+	      <url>http://wrapper.tanukisoftware.com/download/${wrapper.version}/${wrapper.pack}</url>
+	      <outputFileName>${wrapper.pack}</outputFileName>
+	      <outputDirectory>${basedir}/data</outputDirectory>
+	      <unpack>true</unpack>
+	      <md5>f6a0b5f354a518bbc1f09e578edd69a7</md5>
+	    </configuration>
+	  </execution>
 	</executions>
       </plugin>
     </plugins>
