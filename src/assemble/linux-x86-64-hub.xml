@@ -8,5 +8,17 @@
         <format>tar.bz2</format>
     </formats>
 
+    <fileSets>
+
+        <!-- Fileset per wrapper/log -->
+        <fileSet>
+            <directory>../data/${wrapper.pack.dir}/logs</directory>
+            <outputDirectory>logs/</outputDirectory>
+            <includes>
+                <include>wrapper.log</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
 
 </assembly>
