@@ -11,6 +11,7 @@
 
   <modules>
     <module>hub</module>
+    <module>node</module>
   </modules>
 
   <name>Selenium Grid Services</name>
