@@ -38,7 +38,18 @@
                   <descriptors>
                     <descriptor>${project.parent.basedir}src/assemble/linux-x86-64-hub.xmk</descriptor>
                   </descriptors>
-                </configuration>               
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>create-tarballs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
             </plugin>
         </plugins>
 
