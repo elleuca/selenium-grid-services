@@ -12,7 +12,7 @@
     </parent>
 
     <artifactId>selenium-hub-service</artifactId>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
     <packaging>pom</packaging>
 
     <name>Hub Service</name>
