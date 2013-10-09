@@ -39,7 +39,7 @@
                         <filter>src/assemble/filter.properties</filter>
                     </filters>
                   <descriptors>
-                    <descriptor>${project.parent.basedir}src/assemble/linux-x86-64-hub.xmk</descriptor>
+                    <descriptor>${project.parent.basedir}/src/assemble/linux-x86-64-hub.xml</descriptor>
                   </descriptors>
                 </configuration>
 
