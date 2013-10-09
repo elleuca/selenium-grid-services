@@ -9,6 +9,10 @@
   <version>0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <modules>
+    <module>hub</module>
+  </modules>
+
   <name>Selenium Grid Services</name>
 
   <properties>
