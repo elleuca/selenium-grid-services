@@ -36,7 +36,7 @@
 
                 <configuration>
                   <descriptors>
-                    <descriptor>src/assemble/linux-x86-64-hub.xmk</descriptor>
+                    <descriptor>${project.parent.basedir}src/assemble/linux-x86-64-hub.xmk</descriptor>
                   </descriptors>
                 </configuration>               
             </plugin>
