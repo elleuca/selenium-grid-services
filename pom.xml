@@ -12,8 +12,12 @@
   <name>Selenium Grid Services</name>
 
   <properties>
+    <wrapper.version>3.5.20</wrapper.version>
     <selenium.version>2.35.0</selenium.version>
+
     <selenium.jar>selenium-server-standalone-${selenium.version}.jar</selenium.jar>
+    <wrapper.pack.dir>wrapper-delta-pack-${wrapper.version}</wrapper.pack.dir>
+    <wrapper.pack>${wrapper.pack.dir}.zip</wrapper.pack>
   </properties>
 
   <build>
