@@ -68,6 +68,12 @@
             <filtered>true</filtered>
         </file>
 
+        <file>
+            <source>${project.parent.basedir}/src/conf/hub.json.in</source>
+            <destName>hub.json</destName>
+            <outputDirectory>conf/</outputDirectory>
+        </file>
+
     </files>
 
 </assembly>
