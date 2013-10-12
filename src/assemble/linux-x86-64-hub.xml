@@ -36,6 +36,13 @@
         <outputDirectory>lib/</outputDirectory>
     </file>
 
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/bin/wrapper-linux-x86-64</source>
+            <destName>wrapper</destName>
+            <outputDirectory>bin/</outputDirectory>
+            <fileMode>0755</fileMode>
+        </file>
+
 </files>
 
 </assembly>
