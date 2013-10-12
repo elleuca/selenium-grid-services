@@ -74,6 +74,13 @@
             <outputDirectory>conf/</outputDirectory>
         </file>
 
+        <file>
+            <source>${project.parent.basedir}/src/conf/hubwrapper.conf.in</source>
+            <outputDirectory>conf/</outputDirectory>
+            <destName>wrapper.conf</destName>
+            <filtered>true</filtered>
+        </file>
+
     </files>
 
 </assembly>
