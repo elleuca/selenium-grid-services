@@ -18,6 +18,15 @@
             </includes>
         </fileSet>
 
+        <fileSet>
+            <directory>${project.parent.basedir}/data/${wrapper.pack.dir}/lib/</directory>
+            <outputDirectory>lib/</outputDirectory>
+            <includes>
+                <include>wrapper.jar</include>
+                <include>libwrapper.so</include>
+            </includes>
+        </fileSet>
+
     </fileSets>
 
 
