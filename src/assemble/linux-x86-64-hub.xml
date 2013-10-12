@@ -23,7 +23,6 @@
             <outputDirectory>lib/</outputDirectory>
             <includes>
                 <include>wrapper.jar</include>
-                <include>libwrapper.so</include>
             </includes>
         </fileSet>
 
@@ -35,6 +34,12 @@
         <source>${project.parent.basedir}/data/${selenium.jar}</source>
         <outputDirectory>lib/</outputDirectory>
     </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/lib/libwrapper-linux-x86-64.so</source>
+            <outputDirectory>lib/</outputDirectory>
+            <destName>libwrapper.so</destName>
+        </file>
 
         <file>
             <source>${project.parent.basedir}/data/${wrapper.pack.dir}/bin/wrapper-linux-x86-64</source>
