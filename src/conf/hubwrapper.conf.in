@@ -76,7 +76,7 @@ wrapper.java.additional.auto_bits=TRUE
 #wrapper.java.maxmemory=64
 
 # Application parameters.  Add parameters as needed starting from 1
-wrapper.app.parameter.1=../lib/@selenium.server.standalone@
+wrapper.app.parameter.1=../lib/@selenium.jar@
 wrapper.app.parameter.2=-role
 wrapper.app.parameter.3=hub
 wrapper.app.parameter.4=-hubConfig
