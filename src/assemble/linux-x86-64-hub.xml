@@ -12,7 +12,7 @@
 
         <!-- Fileset per wrapper/log -->
         <fileSet>
-            <directory>../data/${wrapper.pack.dir}/logs</directory>
+            <directory>${project.parent.basedir}/data/${wrapper.pack.dir}/logs</directory>
             <outputDirectory>logs/</outputDirectory>
             <includes>
                 <include>wrapper.log</include>
