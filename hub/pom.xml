@@ -22,7 +22,10 @@
       <app.long.name>Selenium Hub Service</app.long.name>
       <app.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the tests to its registered nodes</app.description>
 
-      
+        <wrapper.name>SeleniumHubService</wrapper.name>
+        <wrapper.displayname>Selenium Hub</wrapper.displayname>
+        <wrapper.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the tests to its registered nodes
+        </wrapper.description>
     </properties>
 
 
@@ -36,7 +39,7 @@
 
                 <configuration>
                     <filters>
-                        <filter>src/assemble/filter.properties</filter>
+                        <filter>${project.parent.basedir}/src/assemble/filter.properties</filter>
                     </filters>
                   <descriptors>
                     <descriptor>${project.parent.basedir}/src/assemble/linux-x86-64-hub.xml</descriptor>
