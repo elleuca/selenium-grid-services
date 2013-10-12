@@ -43,6 +43,14 @@
             <fileMode>0755</fileMode>
         </file>
 
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/src/bin/sh.script.in</source>
+            <outputDirectory>bin/</outputDirectory>
+            <destName>hubservice</destName>
+            <fileMode>0755</fileMode>
+            <filtered>true</filtered>
+        </file>
+
 </files>
 
 </assembly>
