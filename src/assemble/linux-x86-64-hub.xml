@@ -37,6 +37,12 @@
         </file>
 
         <file>
+            <source>${project.parent.basedir}/src/INSTALL.linux.txt</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>INSTALL</destName>
+        </file>
+
+        <file>
             <source>${project.parent.basedir}/data/${selenium.jar}</source>
             <outputDirectory>lib/</outputDirectory>
         </file>
