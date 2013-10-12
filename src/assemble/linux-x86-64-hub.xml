@@ -30,10 +30,10 @@
 
 
     <files>
-    <file>
-        <source>${project.parent.basedir}/data/${selenium.jar}</source>
-        <outputDirectory>lib/</outputDirectory>
-    </file>
+        <file>
+            <source>${project.parent.basedir}/data/${selenium.jar}</source>
+            <outputDirectory>lib/</outputDirectory>
+        </file>
 
         <file>
             <source>${project.parent.basedir}/data/${wrapper.pack.dir}/lib/libwrapper-linux-x86-64.so</source>
@@ -56,6 +56,6 @@
             <filtered>true</filtered>
         </file>
 
-</files>
+    </files>
 
 </assembly>
