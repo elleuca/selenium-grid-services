@@ -31,6 +31,12 @@
 
     <files>
         <file>
+            <source>${project.parent.basedir}/src/README.linux.txt</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>README</destName>
+        </file>
+
+        <file>
             <source>${project.parent.basedir}/data/${selenium.jar}</source>
             <outputDirectory>lib/</outputDirectory>
         </file>
