@@ -6,7 +6,7 @@
 
   <groupId>it.elleuca.selenium</groupId>
   <artifactId>selenium-grid-services</artifactId>
-  <version>0.1-SNAPSHOT</version>
+  <version>0.0.2</version>
   <packaging>pom</packaging>
 
   <modules>
@@ -36,7 +36,7 @@
           <executions>
 	  <execution>
 	    <id>fetch-selenium-server-standalone</id>
-	    <phase>package</phase>
+	    <phase>compile</phase>
 	    <goals>
 	      <goal>wget</goal>
 	    </goals>
@@ -47,7 +47,7 @@
 	  </execution>
 	  <execution>
 	    <id>wrapperpack</id>
-	    <phase>package</phase>
+	    <phase>compile</phase>
 	    <goals>
 	      <goal>wget</goal>
 	    </goals>
