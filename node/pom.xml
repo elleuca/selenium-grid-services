@@ -35,7 +35,32 @@
             </resource>
         </resources>
 
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
 
+                <configuration>
+                    <filters>
+                        <filter>filter.properties</filter>
+                    </filters>
+                    <descriptors>
+                        <descriptor>windows-x86-32-node.xml</descriptor>
+                    </descriptors>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>create-tarball</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
 
     </build>
 
