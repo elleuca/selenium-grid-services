@@ -24,7 +24,19 @@
 
         <wrapper.name>SeleniumNodeService</wrapper.name>
         <wrapper.displayname>Selenium Node</wrapper.displayname>
-        <wrapper.description>Selenium Node registers with the hub on port 5555 and runs concurrent tests</wrapper.description>
+        <wrapper.description>Selenium Node registers with the hub on port 5555 and runs concurrent tests
+        </wrapper.description>
     </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.parent.basedir}/src/assemble</directory>
+            </resource>
+        </resources>
+
+
+
+    </build>
 
 </project>
