@@ -1,0 +1,101 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+    <id>windows-x86-32</id>
+
+    <formats>
+        <format>zip</format>
+    </formats>
+
+    <fileSets>
+
+        <!-- Fileset per wrapper/log -->
+        <fileSet>
+            <directory>${project.parent.basedir}/data/${wrapper.pack.dir}/logs</directory>
+            <outputDirectory>logs/</outputDirectory>
+            <includes>
+                <include>wrapper.log</include>
+            </includes>
+        </fileSet>
+
+        <fileSet>
+            <directory>${project.parent.basedir}/data/${wrapper.pack.dir}/lib/</directory>
+            <outputDirectory>lib/</outputDirectory>
+            <includes>
+                <include>wrapper.jar</include>
+            </includes>
+        </fileSet>
+
+    </fileSets>
+
+
+    <files>
+        <file>
+            <source>${project.parent.basedir}/src/README.win.txt</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>README</destName>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/src/INSTALL.win.txt</source>
+            <outputDirectory>/</outputDirectory>
+            <destName>INSTALL</destName>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${selenium.jar}</source>
+            <outputDirectory>lib/</outputDirectory>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/lib/wrapper-windows-x86-32.dll</source>
+            <outputDirectory>lib/</outputDirectory>
+            <destName>libwrapper.so</destName>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/bin/wrapper-windows-x86-32.exe</source>
+            <destName>wrapper.exe</destName>
+            <outputDirectory>bin/</outputDirectory>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/src/bin/InstallApp-NT.bat.in</source>
+            <outputDirectory>bin/</outputDirectory>
+            <destName>InstallSeleniumNode.bat</destName>
+            <lineEnding>dos</lineEnding>
+            <filtered>true</filtered>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/src/bin/UninstallApp-NT.bat.in</source>
+            <outputDirectory>bin/</outputDirectory>
+            <destName>UninstallSeleniumNode.bat</destName>
+            <lineEnding>dos</lineEnding>
+            <filtered>true</filtered>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/data/${wrapper.pack.dir}/src/bin/App.bat.in</source>
+            <outputDirectory>bin/</outputDirectory>
+            <destName>SeleniumNode.bat</destName>
+            <lineEnding>dos</lineEnding>
+            <filtered>true</filtered>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/src/conf/node.json.in</source>
+            <destName>node.json</destName>
+            <outputDirectory>conf/</outputDirectory>
+        </file>
+
+        <file>
+            <source>${project.parent.basedir}/src/conf/nodewrapper.conf.in</source>
+            <outputDirectory>conf/</outputDirectory>
+            <destName>wrapper.conf</destName>
+            <filtered>true</filtered>
+        </file>
+
+    </files>
+
+</assembly>

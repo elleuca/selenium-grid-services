@@ -5,16 +5,60 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>it.verthink.selenium</groupId>
+        <groupId>it.elleuca.selenium</groupId>
         <artifactId>selenium-grid-services</artifactId>
-        <version>0.1</version>
+        <version>0.0.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>selenium-hub-service</artifactId>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
     <packaging>pom</packaging>
 
     <name>Hub Service</name>
+
+    <properties>
+      <app.name>SeleniumHubService</app.name>
+      <app.long.name>Selenium Hub Service</app.long.name>
+      <app.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the tests to its registered nodes</app.description>
+
+        <wrapper.name>SeleniumHubService</wrapper.name>
+        <wrapper.displayname>Selenium Hub</wrapper.displayname>
+        <wrapper.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the tests to its registered nodes
+        </wrapper.description>
+    </properties>
+
+
+    <build>
+      
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version> 
+
+                <configuration>
+                    <filters>
+                        <filter>${project.parent.basedir}/src/assemble/filter.properties</filter>
+                    </filters>
+                  <descriptors>
+                    <descriptor>${project.parent.basedir}/src/assemble/linux-x86-64-hub.xml</descriptor>
+                  </descriptors>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>create-tarballs</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+            </plugin>
+        </plugins>
+
+    </build>
 
 </project>
