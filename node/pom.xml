@@ -12,9 +12,55 @@
     </parent>
 
     <artifactId>selenium-node-service</artifactId>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
     <packaging>pom</packaging>
 
     <name>Node Service</name>
+
+    <properties>
+        <app.name>SeleniumNodeService</app.name>
+        <app.long.name>Selenium Node Service</app.long.name>
+        <app.description>Selenium Node registers with the hub on port 5555 and runs concurrent tests</app.description>
+
+        <wrapper.name>SeleniumNodeService</wrapper.name>
+        <wrapper.displayname>Selenium Node</wrapper.displayname>
+        <wrapper.description>Selenium Node registers with the hub on port 5555 and runs concurrent tests
+        </wrapper.description>
+    </properties>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>${project.parent.basedir}/src/assemble</directory>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <filters>
+                        <filter>${project.parent.basedir}/src/assemble/filter.properties</filter>
+                    </filters>
+                    <descriptors>
+                        <descriptor>${project.parent.basedir}/src/assemble/windows-x86-32-node.xml</descriptor>
+                    </descriptors>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>create-tarball</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>attached</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+
+    </build>
 
 </project>
