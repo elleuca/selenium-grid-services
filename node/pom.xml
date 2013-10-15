@@ -12,7 +12,7 @@
     </parent>
 
     <artifactId>selenium-node-service</artifactId>
-    <version>${parent.version}</version>
+    <version>${project.parent.version}</version>
     <packaging>pom</packaging>
 
     <name>Node Service</name>
@@ -40,13 +40,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>2.4</version>
-
                 <configuration>
                     <filters>
-                        <filter>filter.properties</filter>
+                        <filter>${project.parent.basedir}/src/assemble/filter.properties</filter>
                     </filters>
                     <descriptors>
-                        <descriptor>windows-x86-32-node.xml</descriptor>
+                        <descriptor>${project.parent.basedir}/src/assemble/windows-x86-32-node.xml</descriptor>
                     </descriptors>
                 </configuration>
 
