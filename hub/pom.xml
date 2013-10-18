@@ -7,12 +7,12 @@
     <parent>
         <groupId>it.elleuca.selenium</groupId>
         <artifactId>selenium-grid-services</artifactId>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
 
     <artifactId>selenium-hub-service</artifactId>
-    <version>${project.parent.version}</version>
+    <version>0.0.3</version>
     <packaging>pom</packaging>
 
     <name>Hub Service</name>
