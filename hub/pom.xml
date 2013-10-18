@@ -18,32 +18,35 @@
     <name>Hub Service</name>
 
     <properties>
-      <app.name>SeleniumHubService</app.name>
-      <app.long.name>Selenium Hub Service</app.long.name>
-      <app.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the tests to its registered nodes</app.description>
+        <app.name>SeleniumHubService</app.name>
+        <app.long.name>Selenium Hub Service</app.long.name>
+        <app.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the
+            tests to its registered nodes
+        </app.description>
 
         <wrapper.name>SeleniumHubService</wrapper.name>
         <wrapper.displayname>Selenium Hub</wrapper.displayname>
-        <wrapper.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute the tests to its registered nodes
+        <wrapper.description>Selenium Hub runs on port 4444 and receives incoming tests from Junit, it will distribute
+            the tests to its registered nodes
         </wrapper.description>
     </properties>
 
 
     <build>
-      
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
-                <version>2.4</version> 
+                <version>2.4</version>
 
                 <configuration>
                     <filters>
                         <filter>${project.parent.basedir}/src/assemble/filter.properties</filter>
                     </filters>
-                  <descriptors>
-                    <descriptor>${project.parent.basedir}/src/assemble/linux-x86-64-hub.xml</descriptor>
-                  </descriptors>
+                    <descriptors>
+                        <descriptor>${project.parent.basedir}/src/assemble/linux-x86-64-hub.xml</descriptor>
+                    </descriptors>
                 </configuration>
 
                 <executions>
