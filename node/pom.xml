@@ -46,6 +46,7 @@
                     </filters>
                     <descriptors>
                         <descriptor>${project.parent.basedir}/src/assemble/windows-x86-32-node.xml</descriptor>
+                        <descriptor>${project.parent.basedir}/src/assemble/linux-x86-64-node.xml</descriptor>
                     </descriptors>
                 </configuration>
 
