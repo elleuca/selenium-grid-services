@@ -3,6 +3,7 @@ Selenium Server (Hub and Node) Services Scripts
 
 Introduction
 ------------
+
 This module helps to build simple to set-up services for Selenium Grid(2).
 
 Basically, it uses maven to fetch relevant files from internet and to
@@ -16,17 +17,19 @@ How it works
 ------------
 
 This module will use maven to:
-* fetch desired version of standalone Selenium Server JAR file
-* fetch desired version of Java Service Wrapper
-* build required packages to run a hub or grid node on Windows and Linux
+
+- fetch desired version of standalone Selenium Server JAR file
+- fetch desired version of Java Service Wrapper
+- build required packages to run a hub or grid node on Windows and Linux
 
 So, basically, it should be only required a working Maven in order to use it.
 
 Know Issues
 -----------
-* ***General***
+
+- ***General***
     + maybe...
-* **Windows**
+- **Windows**
     + maybe...
-* **Linux**
+- **Linux**
     + maybe...
