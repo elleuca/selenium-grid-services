@@ -4,7 +4,7 @@ Selenium Server (Hub and Node) Services Builder
 Introduction
 ------------
 
-This module helps to build simple to set-up services for Selenium Grid(2).
+This module helps you to build a simple to install/set-up/manage system service for Selenium Grid(2).
 
 Basically, it uses Maven to
 
@@ -18,7 +18,7 @@ Thanks to [Java Weblog](http://javanetspeed.blogspot.com) for initial
 Getting Started
 ---------------
 
-* clone this repository (`master` branch holds stable release)
+* clone this repository (*master* branch holds stable release)
 * run `mvn package`
 * pick up packages from `hub/target` and `node/target` subdirectories
 * follow instructions in `README` and `INSTALL` files to run or install services
@@ -28,16 +28,16 @@ By now node and hub packages for Linux (x86-64) and Windows (x86-32) are provide
 Package Usage
 -------------
 
-**Important** in order to have a working grid, you have to *configure* each node service providing IP addresses
+**Important**: in order to have a working grid, you have to *configure* the each node service, providing IP addresses
 for hub host and for node host itself.
 
 Steps to set up a hub/node host are:
 
 * extract package
 * configure it if it's a node host (see `conf/node.json`)
-* manually run or install as a service (see `bin/`
+* manually run or install as a service (see `bin/` directory)
 
-Detailed info are available in `README` and `INSTALL files.
+Detailed info are available in `README` and `INSTALL` files.
 
 Know Issues
 -----------
