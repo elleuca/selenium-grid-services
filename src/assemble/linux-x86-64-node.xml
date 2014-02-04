@@ -33,13 +33,13 @@
         <file>
             <source>${project.parent.basedir}/src/README.linux.txt</source>
             <outputDirectory>/</outputDirectory>
-            <destName>README</destName>
+            <destName>README.md</destName>
         </file>
 
         <file>
             <source>${project.parent.basedir}/src/INSTALL.linux.txt</source>
             <outputDirectory>/</outputDirectory>
-            <destName>INSTALL</destName>
+            <destName>INSTALL.md</destName>
         </file>
 
         <file>
