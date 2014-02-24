@@ -1,4 +1,5 @@
 {
+  "host": @FILL_ME_WITH_IP@,
   "port": 4444,
   "newSessionWaitTimeout": -1,
   "servlets" : [],
