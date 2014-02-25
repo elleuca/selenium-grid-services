@@ -6,7 +6,7 @@
 
     <groupId>it.elleuca.selenium</groupId>
     <artifactId>selenium-grid-services</artifactId>
-    <version>0.0.4</version>
+    <version>0.1.0</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -18,7 +18,7 @@
 
     <properties>
         <wrapper.version>3.5.20</wrapper.version>
-        <selenium.version>2.37.0</selenium.version>
+        <selenium.version>2.39.0</selenium.version>
 
         <selenium.jar>selenium-server-standalone-${selenium.version}.jar</selenium.jar>
         <wrapper.pack.dir>wrapper-delta-pack-${wrapper.version}</wrapper.pack.dir>
