@@ -18,7 +18,11 @@
 
     <properties>
         <wrapper.version>3.5.20</wrapper.version>
-        <selenium.version>2.39.0</selenium.version>
+
+        <selenium.release>2.40</selenium.release>
+        <selenium.micro>0</selenium.micro>
+
+        <selenium.version>${selenium.release}.${selenium.micro}</selenium.version>
 
         <selenium.jar>selenium-server-standalone-${selenium.version}.jar</selenium.jar>
         <wrapper.pack.dir>wrapper-delta-pack-${wrapper.version}</wrapper.pack.dir>
@@ -41,7 +45,7 @@
                             <goal>wget</goal>
                         </goals>
                         <configuration>
-                            <url>https://selenium.googlecode.com/files/${selenium.jar}</url>
+                            <url>http://selenium-release.storage.googleapis.com/${selenium.release}/${selenium.jar}</url>
                             <outputDirectory>${basedir}/data</outputDirectory>
                         </configuration>
                     </execution>
