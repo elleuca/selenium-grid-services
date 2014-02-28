@@ -27,6 +27,9 @@
         <selenium.jar>selenium-server-standalone-${selenium.version}.jar</selenium.jar>
         <wrapper.pack.dir>wrapper-delta-pack-${wrapper.version}</wrapper.pack.dir>
         <wrapper.pack>${wrapper.pack.dir}.zip</wrapper.pack>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <build>
@@ -73,7 +76,7 @@
                 <configuration>
                     <filesets>
                         <fileset>
-                            <directory>data/</directory>
+                            <directory>${basedir}/data</directory>
                         </fileset>
                     </filesets>
                 </configuration>
