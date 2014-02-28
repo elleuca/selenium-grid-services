@@ -37,7 +37,7 @@
         </file>
 
         <file>
-            <source>${project.parent.basedir}/src/INSTALL.linux.txt</source>
+            <source>${project.parent.basedir}/src/INSTALL.linux.md</source>
             <outputDirectory>/</outputDirectory>
             <destName>INSTALL.md</destName>
         </file>
