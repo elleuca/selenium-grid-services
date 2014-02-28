@@ -31,7 +31,7 @@
 
     <files>
         <file>
-            <source>${project.parent.basedir}/src/README.linux.txt</source>
+            <source>${project.parent.basedir}/src/README.linux.md</source>
             <outputDirectory>/</outputDirectory>
             <destName>README.md</destName>
         </file>
