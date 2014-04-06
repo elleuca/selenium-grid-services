@@ -19,7 +19,7 @@
     <properties>
         <wrapper.version>3.5.20</wrapper.version>
 
-        <selenium.release>2.40</selenium.release>
+        <selenium.release>2.41</selenium.release>
         <selenium.micro>0</selenium.micro>
 
         <selenium.version>${selenium.release}.${selenium.micro}</selenium.version>
