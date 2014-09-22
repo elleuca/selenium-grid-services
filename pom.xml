@@ -21,8 +21,8 @@
 
         <wrapper.version>3.5.25</wrapper.version>
 
-        <selenium.release>2.41</selenium.release>
-        <selenium.micro>0</selenium.micro>
+        <selenium.release>2.43</selenium.release>
+        <selenium.micro>1</selenium.micro>
 
         <selenium.version>${selenium.release}.${selenium.micro}</selenium.version>
 
@@ -48,7 +48,9 @@
                         </goals>
                         <configuration>
                             <url>http://selenium-release.storage.googleapis.com/${selenium.release}/${selenium.jar}</url>
+                            <outputFileName>${selenium.jar}</outputFileName>
                             <outputDirectory>${basedir}/data</outputDirectory>
+                            <unpack>false</unpack>
                         </configuration>
                     </execution>
                     <execution>
