@@ -17,7 +17,7 @@
     <name>Selenium Grid Services</name>
 
     <properties>
-        <wrapper.version>3.5.20</wrapper.version>
+        <wrapper.version>3.5.25</wrapper.version>
 
         <selenium.release>2.41</selenium.release>
         <selenium.micro>0</selenium.micro>
@@ -60,7 +60,7 @@
                             <outputFileName>${wrapper.pack}</outputFileName>
                             <outputDirectory>${basedir}/data</outputDirectory>
                             <unpack>true</unpack>
-                            <md5>f6a0b5f354a518bbc1f09e578edd69a7</md5>
+                            <md5>9a324e61c19e8a74b24d639e7796bda3</md5>
                         </configuration>
                     </execution>
                 </executions>
