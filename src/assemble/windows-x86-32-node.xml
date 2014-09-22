@@ -50,7 +50,7 @@
         <file>
             <source>${project.parent.basedir}/data/${wrapper.pack.dir}/lib/wrapper-windows-x86-32.dll</source>
             <outputDirectory>lib/</outputDirectory>
-            <destName>Wrapper.DLL</destName>
+            <destName>wrapper.dll</destName>
         </file>
 
         <file>
