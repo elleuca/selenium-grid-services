@@ -6,7 +6,7 @@
 
     <groupId>it.elleuca.selenium</groupId>
     <artifactId>selenium-grid-services</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -17,10 +17,12 @@
     <name>Selenium Grid Services</name>
 
     <properties>
-        <wrapper.version>3.5.20</wrapper.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <selenium.release>2.41</selenium.release>
-        <selenium.micro>0</selenium.micro>
+        <wrapper.version>3.5.25</wrapper.version>
+
+        <selenium.release>2.43</selenium.release>
+        <selenium.micro>1</selenium.micro>
 
         <selenium.version>${selenium.release}.${selenium.micro}</selenium.version>
 
@@ -33,8 +35,8 @@
         <plugins>
             <plugin>
                 <groupId>com.googlecode.maven-download-plugin</groupId>
-                <artifactId>maven-download-plugin</artifactId>
-                <version>1.1.0</version>
+                <artifactId>download-maven-plugin</artifactId>
+                <version>1.2.0</version>
                 <inherited>false</inherited>
 
                 <executions>
@@ -46,7 +48,9 @@
                         </goals>
                         <configuration>
                             <url>http://selenium-release.storage.googleapis.com/${selenium.release}/${selenium.jar}</url>
+                            <outputFileName>${selenium.jar}</outputFileName>
                             <outputDirectory>${basedir}/data</outputDirectory>
+                            <unpack>false</unpack>
                         </configuration>
                     </execution>
                     <execution>
@@ -60,7 +64,7 @@
                             <outputFileName>${wrapper.pack}</outputFileName>
                             <outputDirectory>${basedir}/data</outputDirectory>
                             <unpack>true</unpack>
-                            <md5>f6a0b5f354a518bbc1f09e578edd69a7</md5>
+                            <md5>9a324e61c19e8a74b24d639e7796bda3</md5>
                         </configuration>
                     </execution>
                 </executions>
