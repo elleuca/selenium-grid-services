@@ -17,6 +17,8 @@
     <name>Selenium Grid Services</name>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <wrapper.version>3.5.25</wrapper.version>
 
         <selenium.release>2.41</selenium.release>
